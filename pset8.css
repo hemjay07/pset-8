@@ -1,5 +1,64 @@
-.icons {
-  color: white;
-  font-size: 25px;
-  margin: 15px;
+html {
+  font-size: 0.9rem;
+}
+body {
+  padding: 0 0;
+  background-color: #94b49f;
+  margin: 0;
+}
+.brand {
+  align-items: left;
+}
+.brand-nav-item {
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  font-size: 3.5rem;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  padding: 2rem 1rem 0;
+  color: black;
+}
+
+.nav-item-collapse {
+  display: none;
+}
+.nav-item-expand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav-item-expand {
+  display: none;
+}
+span {
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 1199.98px) {
+  html {
+    font-size: 1rem;
+  }
+  .toggler {
+    display: none;
+  }
+  .nav-item-expand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  .nav-item-collapse {
+    display: none;
+    background-color: red;
+  }
 }
